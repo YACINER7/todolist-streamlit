@@ -10,8 +10,11 @@ st.title("Ma TodoList")
 # Ajouter une nouvelle tâche
 new_task = st.text_input("Ajouter une tâche")
 if st.button("Ajouter"):
-    if new_task.strip() != "":
-        st.session_state["tasks"].append({"task": new_task, "done": False})
+    cleaned_task = new_task.strip()
+    if cleaned_task == "":
+        st.error("La tâche ne peut pas être vide ou ne contenir que des espaces.")
+    else:
+        st.session_state["tasks"].append({"task": cleaned_task, "done": False})
 
 # Afficher les tâches
 st.subheader("Liste des tâches")
