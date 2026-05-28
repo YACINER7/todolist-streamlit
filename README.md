@@ -1,8 +1,8 @@
-Ma TodoList — Projet Streamlit
+# bugfix/tache-vide
 
-Application de gestion de tâches développée avec Streamlit dans le cadre d'un TP de maintenance logicielle.
+cette branche corrige le bug qui permet d'ajouter des taches vides ou des taches en double
 
 `bugfix/tache-vide` | Corrective | Empêcher l'ajout de tâches vides ou en doublon |
 `feature/suppression-tache` | Évolutive | Ajouter la suppression d'une tâche |
-`adaptation/streamlit-cloud` | Adaptative | Préparer le projet pour Streamlit Cloud |
+`adaptation/Java` | Adaptative | Préparer le projet pour Java |
 `perfective/interface-optimisee` | Perfective | Améliorer l'interface utilisateur |
